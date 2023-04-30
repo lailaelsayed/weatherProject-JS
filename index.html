@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!--------------------Nav------------->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container my-4">
+          <a class="navbar-brand mt-2" href="index.html">
+            <div class="d-flex">
+              <img src="Logo.png" alt="" class="logoImg" >
+              <div class="ms-3">
+                <h5 class="text-white fw-bold mb-0">Weather</h5>
+                <p class="logo">tagline goes here</p>
+              </div>
+            </div>
+
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link active text-white me-5" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-5" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-5" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-5" href="#">Photes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <!------------------section------------->
+    <div class="main">
+      <div class="container overflow-auto d-flex flex-wrap justify-content-center">
+        <div class="find my-5 w-100 position-relative">
+          <input  type="text" id="search" class="w-100 rounded-2" placeholder="Find your location ...." >
+          <input type="button" id="submit" class="btn btn-primary" value="Find">
+        </div>
+        <div class="container">
+          <div class="row gx-0">
+            <!------Today-------->
+            <div class="col-lg-4 " >
+              <div id="today">
+                <div class="head d-flex justify-content-between p-3">
+                  <p class="day m-0"></p>
+                  <p class="date m-0"></p>
+                </div>
+                <div class="weather p-3">
+                  <div class="country">
+                    <h4></h4>
+                  </div>
+                  <div class="temperature text-center">
+                    <h1 class="text-white m-0 "></h1>
+                  </div>
+                  <div class="condition text-center">
+                    <img>
+                    <h6 class="text-primary"></h6>
+                  </div>
+                  <div class="icon mt-3 ">
+                    <i class="fa-solid fa-umbrella"></i>
+                    <span class="me-2">20%</span>
+                    <i class="fa-solid fa-wind"></i>
+                    <span class="me-2">18km/h</span>
+                    <i class="fa-solid fa-compass"></i>
+                    <span>East</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-----------tomorrow-------------->
+            <div class="col-lg-4 " >
+              <div id="tomorrow" class="text-center" >
+                <div class="head p-3">
+                  <p class="day m-0"></p>
+                </div>
+                <div class="weather p-3">
+                  <div class="img  mt-4">
+                    <img>
+                  </div>
+                  <div class="max mt-3">
+                    <h1 class="text-white  m-0"></h1>
+                  </div>
+                  <div class="min">
+                    <h6></h6>
+                  </div>
+                  <div class="condition mt-4 mb-5">
+                    <h6 class="text-primary"></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!---------------After tomorrow---------->
+            <div class="col-lg-4 " >
+              <div id="after" class="text-center" >
+                <div class="head p-3">
+                  <p class="day m-0"></p>
+                </div>
+                <div class="weather p-3">
+                  <div class="img  mt-4">
+                    <img  >
+                  </div>
+                  <div class="max mt-3">
+                    <h1 class="text-white  m-0"></h1>
+                  </div>
+                  <div class="min">
+                    <h6></h6>
+                  </div>
+                  <div class="condition mt-4 mb-5">
+                    <h6 class="text-primary"></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-------------------------------------footer------------------------------------------>
+    <footer class="mt-5">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="find my-5 w-100 position-relative">
+              <input type="text" id="search" class="w-100 rounded-2" placeholder="Find your email to subscribe ...." >
+              <input type="button" id="submit" class="btn btn-primary" value="subscribe">
+            </div>
+          </div>
+          <div class="col-md-3 offset-md-1">
+            <div class="social mt-5">
+              <a href="#" class=" me-2" >
+                <i class="fa-brands fa-facebook-f fs-3 pt-2" ></i>
+              </a>
+              <a href="#" class=" me-2">
+                <i class="fa-brands fa-twitter fs-3  pt-2"></i>
+              </a>
+              <a href="#" class=" me-2" >
+                <i class="fa-brands fa-google-plus-square fs-3  pt-2"></i>
+              </a>
+              <a href="#" >
+                <i class="fa-brands fa-pinterest-p fs-3  pt-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pb-1">
+          <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+
+
+
+    </footer>
+
+
+ 
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

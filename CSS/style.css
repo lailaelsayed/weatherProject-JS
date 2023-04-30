@@ -1,0 +1,120 @@
+body{
+    font-family: Roboto, "Open Sans", sans-serif;
+    color:#bfc1c8;
+    background: #1e202b;
+
+}
+.logo{
+    color:#bfc1c8;
+    font-size: 10px;
+    font-weight: 300;
+}
+/* .navbar{
+    background-color: #1E202B;
+} */
+.logoImg{
+    height: 15%;
+}
+.active , .nav-link:hover{
+    border: 2px solid #009AD8;
+    border-radius: 30px;
+    color: #009AD8 !important;
+}
+/***************section*******************/
+.main{
+    background-image: url(..//img1.png);
+    background-repeat: no-repeat;   
+}
+.find #search{
+    outline: none;
+    border: none;
+    border-radius: 30px !important;
+    padding: 10px 10px;
+    color: white;
+    background-color: #1E202B;
+   
+}
+.find #submit , .subscribe #ok{
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    right: 5px;
+    padding: 0px 40px;
+    border-radius: 30px !important;
+}
+#today .temperature h1{
+    font-size: 80px;
+    font-weight: 700;
+    
+}
+.icon {
+    font-size: 20px;
+}
+
+#today .head {
+    background-color: #2D303D;
+    border-top-left-radius:8px;
+}
+#today .weather{
+    background-color: #323544;
+    border-bottom-left-radius:8px;
+}
+#tomorrow .head{
+    background-color: #222531;
+}
+#tomorrow .weather{
+    background-color: #262936;
+}
+#after .head{
+    background-color: #2D303D;
+    border-top-right-radius:8px;
+}
+#after .weather{
+    background-color: #323544;
+    border-bottom-right-radius:8px;
+}
+
+/**********************footer********************/
+footer{
+    background-color: #262936;
+}
+.social a{
+    display: inline-block;
+    transition: all 0.5s;
+    width: 50px;
+    height: 50px;
+    background-color: #1E202B;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social a:hover{
+    background-color: #009AD8 !important;
+    color: white !important;
+
+}
+
+.test{
+    background-color: #262936;
+    padding: 20px 30px;
+    border-radius: 40px;
+    
+}
+
+
+form input , form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid #393c48;
+    background: transparent;
+    outline: none;
+    border-radius: 30px;
+}
+form input:hover , form textarea:hover {
+    border-color: #009AD8;
+}
+
+
+
